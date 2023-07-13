@@ -20,6 +20,7 @@ function Navbar() {
         </div>
       </div>
       {/* <-- top navbar --> */}
+
       {/* <!-- navbar --> */}
       <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
@@ -48,9 +49,15 @@ function Navbar() {
                 </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <NavLink to="/about" className="nav-link">
+                  About
+                </NavLink>
+              </li>
+            
+              <li class="nav-item">
+                <NavLink className="nav-link" to="/products">
                   Product
-                </a>
+                </NavLink>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -63,6 +70,7 @@ function Navbar() {
                 >
                   Category
                 </a>
+
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a class="dropdown-item" href="#">
@@ -110,12 +118,9 @@ function Navbar() {
                     </a>
                   </li>
                 </ul>
+
               </li>
-              <li class="nav-item">
-                <NavLink to="/about" className="nav-link">
-                  About
-                </NavLink>
-              </li>
+
               <li class="nav-item">
                 <NavLink to="/contact" className="nav-link">
                   Contact
